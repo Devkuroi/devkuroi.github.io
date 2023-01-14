@@ -1,7 +1,15 @@
 :root {
 	--bg-color-main: #1c1c1c;
-    --format: 7em 7em 13em 4em;
-    
+	--format: 7em 7em 13em 4em;
+	--time-animation: 0.4s;
+}
+
+@mixin format() {
+	padding: var(--format);
+
+	@media(max-width:325px) {
+		padding: 2rem;
+	}
 }
 
 body {
@@ -30,15 +38,16 @@ img {
 	width: 11rem;
 	margin-left: 1rem;
 	margin-top: 11rem;
-	transition: 0.4s;
+	transition: var(--time-animation);
 
 	&:hover {
 		transform: scale(1.05);
+		transition: var(--time-animation);
 	}
 }
 
 .nav-item a {
-	transition: 0.4s;
+	transition: var(--time-animation);
 	border-radius: 0.7rem;
 	width: 9rem;
 	padding-left: 10px;
@@ -46,7 +55,7 @@ img {
 	&:hover {
 		background-color: #141414;
 		transform: translateY(-6px) translateX(12px);
-		transition: 0.4s;
+		transition: var(--time-animation);
 	}
 }
 
@@ -56,13 +65,14 @@ img {
 	.content-resume {
 		padding: 2rem;
 		box-shadow: -7px 13px 21px 11px #282828;
-		transition: 0.4s;
+		transition: var(--time-animation);
 
 		&:hover {
 			transform: scale(1.02);
+			transition: var(--time-animation);
 		}
 
-		@media (max-width: 280px) {
+		@media (max-width: 325px) {
 			width: 12rem;
 		}
 	}
@@ -71,28 +81,32 @@ img {
 .section-skills {
 	padding: var(--format);
 
+	@media (max-width:325px) {
+		padding: 2rem;
+	}
+
 	.content-skills {
 		padding: 2rem;
 		transition: 0.4s;
 
-        .title {
-            font-size: 4rem;
-            margin-bottom: 4.5rem;
-        }
+		.title {
+			font-size: 4rem;
+			margin-bottom: 4.5rem;
+		}
 
 		.card {
 			width: 10rem;
 			background-color: var(--bg-color-main);
 
-            .card-body {
-                padding: 2rem;
-                transition: .4s;
+			.card-body {
+				padding: 2rem;
+				transition: 0.4s;
 
-                &:hover {
-                    transform: scale(1.06);
-                    transition: .4s;
-                }
-            }
+				&:hover {
+					transform: scale(1.06);
+					transition: 0.4s;
+				}
+			}
 		}
 	}
 }

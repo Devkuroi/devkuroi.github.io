@@ -1,6 +1,7 @@
 :root {
   --bg-color-main: #1c1c1c;
   --format: 7em 7em 13em 4em;
+  --time-animation: 0.4s;
 }
 
 body {
@@ -29,14 +30,15 @@ img {
   width: 11rem;
   margin-left: 1rem;
   margin-top: 11rem;
-  transition: 0.4s;
+  transition: var(--time-animation);
 }
 img:hover {
   transform: scale(1.05);
+  transition: var(--time-animation);
 }
 
 .nav-item a {
-  transition: 0.4s;
+  transition: var(--time-animation);
   border-radius: 0.7rem;
   width: 9rem;
   padding-left: 10px;
@@ -44,7 +46,7 @@ img:hover {
 .nav-item a:hover {
   background-color: #141414;
   transform: translateY(-6px) translateX(12px);
-  transition: 0.4s;
+  transition: var(--time-animation);
 }
 
 .section-resume {
@@ -53,12 +55,13 @@ img:hover {
 .section-resume .content-resume {
   padding: 2rem;
   box-shadow: -7px 13px 21px 11px #282828;
-  transition: 0.4s;
+  transition: var(--time-animation);
 }
 .section-resume .content-resume:hover {
   transform: scale(1.02);
+  transition: var(--time-animation);
 }
-@media (max-width: 280px) {
+@media (max-width: 325px) {
   .section-resume .content-resume {
     width: 12rem;
   }
@@ -66,6 +69,11 @@ img:hover {
 
 .section-skills {
   padding: var(--format);
+}
+@media (max-width: 325px) {
+  .section-skills {
+    padding: 2rem;
+  }
 }
 .section-skills .content-skills {
   padding: 2rem;

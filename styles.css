@@ -1,6 +1,6 @@
 :root {
   --bg-color-main: #1c1c1c;
-  --format: 7em 7em 13em 4em;
+  --format: 10rem 7em 13em 4em;
   --time-animation: 0.4s;
 }
 
@@ -26,13 +26,13 @@ body {
     height: 100vh;
   }
 }
-img {
+.profile {
   width: 11rem;
   margin-left: 1rem;
   margin-top: 11rem;
   transition: var(--time-animation);
 }
-img:hover {
+.profile:hover {
   transform: scale(1.05);
   transition: var(--time-animation);
 }
@@ -49,8 +49,47 @@ img:hover {
   transition: var(--time-animation);
 }
 
+.section-main {
+  padding: var(--format);
+}
+@media (max-width: 500px) {
+  .section-main {
+    padding: 15rem 2rem;
+  }
+}
+.section-main .header-main {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.section-main .social {
+  margin-top: 2rem;
+}
+.section-main .social .icons-social:last-child {
+  margin-right: 0;
+}
+.section-main .social .icons-social {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: #2c2e50;
+  color: #fff;
+  border-radius: 100%;
+  font-size: 1.5rem;
+  margin-right: 1.5rem;
+}
+.section-main .social .icons-social .icon {
+  height: 2rem;
+}
+
 .section-resume {
   padding: var(--format);
+}
+@media (max-width: 500px) {
+  .section-resume {
+    padding: 15rem 2rem;
+  }
 }
 .section-resume .content-resume {
   padding: 2rem;
@@ -70,28 +109,24 @@ img:hover {
 .section-skills {
   padding: var(--format);
 }
-@media (max-width: 325px) {
+@media (max-width: 500px) {
   .section-skills {
-    padding: 2rem;
+    padding: 15rem 2rem;
   }
 }
-.section-skills .content-skills {
-  padding: 2rem;
-  transition: 0.4s;
-}
-.section-skills .content-skills .title {
+.section-skills .title {
   font-size: 4rem;
   margin-bottom: 4.5rem;
 }
-.section-skills .content-skills .card {
+.section-skills .card {
   width: 10rem;
   background-color: var(--bg-color-main);
 }
-.section-skills .content-skills .card .card-body {
+.section-skills .card .card-body {
   padding: 2rem;
   transition: 0.4s;
 }
-.section-skills .content-skills .card .card-body:hover {
+.section-skills .card .card-body:hover {
   transform: scale(1.06);
   transition: 0.4s;
 }/*# sourceMappingURL=styles.css.map */

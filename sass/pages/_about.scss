@@ -1,0 +1,14 @@
+.section-resume {
+	@include format();
+
+	.content-resume {
+		padding: 2rem;
+		box-shadow: -7px 13px 21px 11px #282828;
+		transition: $time-animation;
+
+		&:hover {
+			transform: scale(1.02);
+			transition: $time-animation;
+		}
+	}
+}

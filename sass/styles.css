@@ -1,0 +1,293 @@
+@import "vendors/bootstrap/bootstrap.min.css";
+.header-main {
+  font-size: 3.5rem;
+}
+
+.subheader {
+  font-size: x-large;
+}
+
+body {
+  background-color: #1c1c1c;
+  padding-top: 6rem;
+}
+@media (min-width: 992px) {
+  body {
+    padding-top: 0px;
+    padding-left: 12rem;
+  }
+}
+
+.icons-social {
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: #2c2e50;
+  transition: 0.4s;
+}
+.icons-social .icon {
+  height: 2rem;
+}
+.icons-social:hover {
+  transform: scale(1.04);
+  transition: 0.4s;
+}
+
+.icons-card {
+  height: 3rem;
+  width: 3rem;
+  color: #9b9b9b;
+  background-color: #2c3e50;
+  transition: 0.4s;
+}
+.icons-card .card-icons {
+  height: 2rem;
+}
+
+.buttons {
+  width: 100%;
+}
+.buttons .btn-email {
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: #2c3e50;
+  border-radius: 4rem !important;
+  overflow: hidden;
+  transition: padding 0.4s, width 0.3s;
+}
+.buttons .btn-email:hover {
+  width: 8rem;
+}
+.buttons .btn-email:hover .text {
+  opacity: 1;
+  visibility: visible;
+  width: 15rem;
+  margin-left: 0.5rem;
+}
+.buttons .btn-email .logo-email {
+  display: block;
+  width: 4.5rem;
+  fill: #9b9b9b;
+}
+.buttons .btn-email .text {
+  color: #9b9b9b;
+  font-size: 1.3rem;
+  width: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s, visibility 0.4s, width 0.3s, margin 0.3s;
+}
+.buttons .btn-whatsapp {
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: #18e918;
+  border: solid 4px black;
+  border-radius: 4rem !important;
+  overflow: hidden;
+  transition: padding 0.4s, width 0.3s;
+}
+.buttons .btn-whatsapp:hover {
+  width: 10rem;
+}
+.buttons .btn-whatsapp:hover .text {
+  opacity: 1;
+  visibility: visible;
+  width: 15rem;
+  margin-left: 0.5rem;
+}
+.buttons .btn-whatsapp .logo-whatsapp {
+  display: block;
+  width: 55px;
+  fill: white;
+}
+.buttons .btn-whatsapp .text {
+  color: white;
+  font-size: 1.3rem;
+  width: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s, visibility 0.4s, width 0.3s;
+}
+.buttons .btn-github {
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: #2c3e50;
+  border-radius: 4rem !important;
+  overflow: hidden;
+  transition: padding 0.4s, width 0.3s;
+}
+.buttons .btn-github:hover {
+  width: 10rem;
+}
+.buttons .btn-github:hover .text {
+  opacity: 1;
+  visibility: visible;
+  width: 15rem;
+  margin-left: 0.5rem;
+}
+.buttons .btn-github .logo-github {
+  display: block;
+  width: 55px;
+  fill: #9b9b9b;
+}
+.buttons .btn-github .text {
+  color: #9b9b9b;
+  font-size: 1.3rem;
+  width: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s, visibility 0.4s, width 0.3s;
+}
+.buttons .btn-linkedin {
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: #2c3e50;
+  border-radius: 4rem !important;
+  overflow: hidden;
+  transition: padding 0.4s, width 0.3s;
+}
+.buttons .btn-linkedin:hover {
+  width: 10rem;
+}
+.buttons .btn-linkedin:hover .text {
+  opacity: 1;
+  visibility: visible;
+  width: 15rem;
+  margin-left: 0.5rem;
+}
+.buttons .btn-linkedin .logo-linkedin {
+  display: block;
+  width: 55px;
+  fill: #9b9b9b;
+}
+.buttons .btn-linkedin .text {
+  color: #9b9b9b;
+  font-size: 1.3rem;
+  width: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s, visibility 0.4s, width 0.3s;
+}
+
+.card-skills {
+  width: 10rem;
+  background-color: #1c1c1c;
+}
+.card-skills .card-body {
+  padding: 2rem;
+  transition: 0.4s;
+}
+.card-skills .card-body:hover {
+  transform: scale(1.06);
+  transition: 0.4s;
+}
+
+.card-portfolio {
+  background-color: #1c1c1c;
+  width: 16rem;
+  height: 24rem;
+  transition: 0.4s;
+}
+.card-portfolio:hover {
+  transform: scale(1.05);
+  transition: 0.4s;
+}
+
+@media (min-width: 992px) {
+  #navsize {
+    padding-left: 0;
+    padding-right: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 12rem;
+    height: 100vh;
+  }
+}
+.profile {
+  width: 11rem;
+  margin-left: 1rem;
+  margin-top: 11rem;
+  transition: 0.4s;
+}
+.profile:hover {
+  transform: scale(1.05);
+  transition: 0.4s;
+}
+
+.nav-item a {
+  transition: 0.4s;
+  border-radius: 0.7rem;
+  width: 9rem;
+  padding-left: 10px;
+}
+.nav-item a:hover {
+  background-color: #141414;
+  transform: translateY(-6px) translateX(12px);
+  transition: 0.4s;
+}
+
+.section-main {
+  padding: 16rem 7rem;
+}
+@media (max-width: 500px) {
+  .section-main {
+    padding: 15rem 2rem;
+  }
+}
+
+.section-resume {
+  padding: 16rem 7rem;
+}
+@media (max-width: 500px) {
+  .section-resume {
+    padding: 15rem 2rem;
+  }
+}
+.section-resume .content-resume {
+  padding: 2rem;
+  box-shadow: -7px 13px 21px 11px #282828;
+  transition: 0.4s;
+}
+.section-resume .content-resume:hover {
+  transform: scale(1.02);
+  transition: 0.4s;
+}
+
+.section-skills {
+  padding: 16rem 7rem;
+}
+@media (max-width: 500px) {
+  .section-skills {
+    padding: 15rem 2rem;
+  }
+}
+.section-skills .title {
+  font-size: 4rem;
+  margin-bottom: 4.5rem;
+}
+
+.section-portfolio {
+  padding: 16rem 7rem;
+}
+@media (max-width: 500px) {
+  .section-portfolio {
+    padding: 15rem 2rem;
+  }
+}
+.section-portfolio .title {
+  font-size: 4rem;
+  margin-bottom: 4.5rem;
+}
+
+.section-contact {
+  padding: 16rem 7rem;
+}
+@media (max-width: 500px) {
+  .section-contact {
+    padding: 15rem 2rem;
+  }
+}
+.section-contact .title {
+  font-size: 4rem;
+  margin-bottom: 4.5rem;
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,14 @@
+@mixin format() {
+	padding: $format;
+
+	@media (max-width: 500px) {
+		padding: 15rem 2rem;
+	}
+}
+
+@mixin title() {
+	.title {
+		font-size: 4rem;
+		margin-bottom: 4.5rem;
+	}
+}

@@ -1,0 +1,37 @@
+@media (min-width: 992px) {
+	#navsize {
+		padding-left: 0;
+		padding-right: 0;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 12rem;
+		height: 100vh;
+	}
+}
+
+
+.profile {
+	width: 11rem;
+	margin-left: 1rem;
+	margin-top: 11rem;
+	transition: $time-animation;
+
+	&:hover {
+		transform: scale(1.05);
+		transition: $time-animation;
+	}
+}
+
+.nav-item a {
+	transition: $time-animation;
+	border-radius: 0.7rem;
+	width: 9rem;
+	padding-left: 10px;
+
+	&:hover {
+		background-color: #141414;
+		transform: translateY(-6px) translateX(12px);
+		transition: $time-animation;
+	}
+}

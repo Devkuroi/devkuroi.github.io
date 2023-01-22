@@ -1,0 +1,26 @@
+.card-skills {
+    width: 10rem;
+    background-color: $bg-color-main;
+
+    .card-body {
+        padding: 2rem;
+        transition: $time-animation;
+
+        &:hover {
+            transform: scale(1.06);
+            transition: $time-animation;
+        }
+    }
+}
+
+.card-portfolio {
+    background-color: $bg-color-main;
+    width: 16rem;
+    height: 24rem;
+    transition: $time-animation;
+
+    &:hover {
+        transform: scale(1.05);
+        transition: $time-animation;
+    }
+}

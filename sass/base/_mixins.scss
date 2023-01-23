@@ -12,3 +12,29 @@
 		margin-bottom: 4.5rem;
 	}
 }
+
+// section contact
+
+@mixin buttons() {
+	width: $width-button;
+	height: $height-button;
+	border-radius: 4rem !important;
+	transition: padding 0.4s, width 0.3s;
+}
+
+@mixin btn-hover() {
+	.text {
+		opacity: 1 !important;
+		visibility: visible !important;
+		width: 15rem;
+		margin-left: 0.5rem;
+	}
+}
+
+@mixin text-btn () {
+	.text {
+		font-size: 1.3rem;
+		width: 0;
+		transition: opacity 0.4s, visibility 0.4s, width 0.3s, margin 0.3s;
+	}
+}

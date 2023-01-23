@@ -28,7 +28,7 @@ body {
   height: 2rem;
 }
 .icons-social:hover {
-  transform: scale(1.04);
+  transform: scale(1.06);
   transition: 0.4s;
 }
 
@@ -44,128 +44,103 @@ body {
 }
 
 .buttons {
-  width: 100%;
+  margin-top: 8rem;
 }
 .buttons .btn-email {
   width: 3.5rem;
   height: 3.5rem;
-  background-color: #2c3e50;
   border-radius: 4rem !important;
-  overflow: hidden;
   transition: padding 0.4s, width 0.3s;
+  background-color: #3399ff;
 }
 .buttons .btn-email:hover {
-  width: 8rem;
+  width: 7rem;
 }
 .buttons .btn-email:hover .text {
-  opacity: 1;
-  visibility: visible;
+  opacity: 1 !important;
+  visibility: visible !important;
   width: 15rem;
   margin-left: 0.5rem;
 }
 .buttons .btn-email .logo-email {
-  display: block;
-  width: 4.5rem;
-  fill: #9b9b9b;
+  width: 8rem;
 }
 .buttons .btn-email .text {
-  color: #9b9b9b;
   font-size: 1.3rem;
   width: 0;
-  opacity: 0;
-  visibility: hidden;
   transition: opacity 0.4s, visibility 0.4s, width 0.3s, margin 0.3s;
 }
 .buttons .btn-whatsapp {
   width: 3.5rem;
   height: 3.5rem;
-  background-color: #18e918;
-  border: solid 4px black;
   border-radius: 4rem !important;
-  overflow: hidden;
   transition: padding 0.4s, width 0.3s;
+  background-color: #18c718;
 }
 .buttons .btn-whatsapp:hover {
-  width: 10rem;
+  width: 9.8rem;
 }
 .buttons .btn-whatsapp:hover .text {
-  opacity: 1;
-  visibility: visible;
+  opacity: 1 !important;
+  visibility: visible !important;
   width: 15rem;
   margin-left: 0.5rem;
 }
 .buttons .btn-whatsapp .logo-whatsapp {
-  display: block;
-  width: 55px;
-  fill: white;
+  width: 8rem;
 }
 .buttons .btn-whatsapp .text {
-  color: white;
   font-size: 1.3rem;
   width: 0;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.4s, visibility 0.4s, width 0.3s;
+  transition: opacity 0.4s, visibility 0.4s, width 0.3s, margin 0.3s;
 }
 .buttons .btn-github {
   width: 3.5rem;
   height: 3.5rem;
-  background-color: #2c3e50;
   border-radius: 4rem !important;
-  overflow: hidden;
   transition: padding 0.4s, width 0.3s;
+  background-color: #000000;
 }
 .buttons .btn-github:hover {
-  width: 10rem;
+  width: 8.5rem;
 }
 .buttons .btn-github:hover .text {
-  opacity: 1;
-  visibility: visible;
+  opacity: 1 !important;
+  visibility: visible !important;
   width: 15rem;
   margin-left: 0.5rem;
 }
 .buttons .btn-github .logo-github {
-  display: block;
-  width: 55px;
-  fill: #9b9b9b;
+  width: 8rem;
 }
 .buttons .btn-github .text {
-  color: #9b9b9b;
   font-size: 1.3rem;
   width: 0;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.4s, visibility 0.4s, width 0.3s;
+  transition: opacity 0.4s, visibility 0.4s, width 0.3s, margin 0.3s;
 }
 .buttons .btn-linkedin {
+  background-color: #025a8a;
   width: 3.5rem;
   height: 3.5rem;
-  background-color: #2c3e50;
   border-radius: 4rem !important;
-  overflow: hidden;
   transition: padding 0.4s, width 0.3s;
 }
 .buttons .btn-linkedin:hover {
-  width: 10rem;
+  width: 9rem;
 }
 .buttons .btn-linkedin:hover .text {
-  opacity: 1;
-  visibility: visible;
+  opacity: 1 !important;
+  visibility: visible !important;
   width: 15rem;
   margin-left: 0.5rem;
 }
 .buttons .btn-linkedin .logo-linkedin {
-  display: block;
-  width: 55px;
-  fill: #9b9b9b;
+  width: 8rem;
 }
 .buttons .btn-linkedin .text {
-  color: #9b9b9b;
   font-size: 1.3rem;
   width: 0;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.4s, visibility 0.4s, width 0.3s;
+  transition: opacity 0.4s, visibility 0.4s, width 0.3s, margin 0.3s;
 }
 
 .card-skills {
@@ -227,7 +202,7 @@ body {
 }
 
 .section-main {
-  padding: 16rem 7rem;
+  padding: 15.7rem 7rem;
 }
 @media (max-width: 500px) {
   .section-main {
@@ -236,7 +211,7 @@ body {
 }
 
 .section-resume {
-  padding: 16rem 7rem;
+  padding: 15.7rem 7rem;
 }
 @media (max-width: 500px) {
   .section-resume {
@@ -254,7 +229,7 @@ body {
 }
 
 .section-skills {
-  padding: 16rem 7rem;
+  padding: 15.7rem 7rem;
 }
 @media (max-width: 500px) {
   .section-skills {
@@ -267,7 +242,7 @@ body {
 }
 
 .section-portfolio {
-  padding: 16rem 7rem;
+  padding: 15.7rem 7rem;
 }
 @media (max-width: 500px) {
   .section-portfolio {
@@ -280,7 +255,7 @@ body {
 }
 
 .section-contact {
-  padding: 16rem 7rem;
+  padding: 15.7rem 7rem;
 }
 @media (max-width: 500px) {
   .section-contact {

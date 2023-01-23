@@ -1,4 +1,4 @@
-// icons social main
+// button social main
 
 .icons-social {
 	height: $height-button;
@@ -11,12 +11,12 @@
 	}
 
 	&:hover {
-		transform: scale(1.04);
+		transform: scale(1.06);
 		transition: $time-animation;
 	}
 }
 
-// icons card
+// buttons cards
 
 .icons-card {
 	height: 3rem;
@@ -33,130 +33,57 @@
 // buttons-contact
 
 .buttons {
-	width: 100%;
+	margin-top: 8rem;
 
 	.btn-email {
-		width: $width-button;
-		height: $height-button;
-		background-color: $bg-button;
-		border-radius: 4rem !important;
-		overflow: hidden;
-		transition: padding 0.4s, width 0.3s;
+		@include buttons();
+		background-color: #3399ff;
 		&:hover {
-			width: 8rem;
-			.text {
-				opacity: 1;
-				visibility: visible;
-				width: 15rem;
-                margin-left: 0.5rem;
-			}
+			width: 7rem;
+			@include btn-hover();
 		}
 		.logo-email {
-			display: block;
-			width: 4.5rem;
-            fill: #9b9b9b;
+			width: 8rem;
 		}
-		.text {
-			color: #9b9b9b;
-			font-size: 1.3rem;
-			width: 0;
-			opacity: 0;
-			visibility: hidden;
-			transition: opacity 0.4s, visibility 0.4s, width 0.3s, margin 0.3s;
-		}
+		@include text-btn();
 	}
 
 	.btn-whatsapp {
-		width: $width-button;
-		height: $height-button;
-		background-color: #18e918;
-        border: solid 4px black;
-		border-radius: 4rem !important;
-		overflow: hidden;
-		transition: padding 0.4s, width 0.3s;
+		@include buttons();
+		background-color: #18c718;
 		&:hover {
-			width: 10rem;
-			.text {
-				opacity: 1;
-				visibility: visible;
-				width: 15rem;
-                margin-left: 0.5rem;
-			}
+			width: 9.8rem;
+			@include btn-hover();
 		}
 		.logo-whatsapp {
-			display: block;
-			width: 55px;
-            fill: white;
+			width: 8rem;
 		}
-		.text {
-			color: white;
-			font-size: 1.3rem;
-			width: 0;
-			opacity: 0;
-			visibility: hidden;
-			transition: opacity 0.4s, visibility 0.4s, width 0.3s,;
-		}
+		@include text-btn();
 	}
 
     .btn-github {
-		width: $width-button;
-		height: $height-button;
-		background-color: $bg-button;
-		border-radius: 4rem !important;
-		overflow: hidden;
-		transition: padding 0.4s, width 0.3s;
+		@include buttons();
+		background-color: #000000;
 		&:hover {
-			width: 10rem;
-			.text {
-				opacity: 1;
-				visibility: visible;
-				width: 15rem;
-                margin-left: 0.5rem;
-			}
+			width: 8.5rem;
+			@include btn-hover();
 		}
 		.logo-github {
-			display: block;
-			width: 55px;
-            fill: #9b9b9b;
+			width: 8rem;
 		}
-		.text {
-			color: #9b9b9b;
-			font-size: 1.3rem;
-			width: 0;
-			opacity: 0;
-			visibility: hidden;
-			transition: opacity 0.4s, visibility 0.4s, width 0.3s,;
-		}
+		@include text-btn();
 	}
 
     .btn-linkedin {
-		width: $width-button;
-		height: $height-button;
-		background-color: $bg-button;
-		border-radius: 4rem !important;
-		overflow: hidden;
-		transition: padding 0.4s, width 0.3s;
+		background-color: #025a8a;
+		@include buttons ();
 		&:hover {
-			width: 10rem;
-			.text {
-				opacity: 1;
-				visibility: visible;
-				width: 15rem;
-                margin-left: 0.5rem;
-			}
+			width: 9rem;
+			@include btn-hover();
 		}
 		.logo-linkedin {
-			display: block;
-			width: 55px;
-            fill: #9b9b9b;
+			width: 8rem;
 		}
-		.text {
-			color: #9b9b9b;
-			font-size: 1.3rem;
-			width: 0;
-			opacity: 0;
-			visibility: hidden;
-			transition: opacity 0.4s, visibility 0.4s, width 0.3s,;
-		}
+		@include text-btn();
 	}
 }

@@ -7,8 +7,6 @@ module.exports = {
   theme: {
     colors: {
       transparent: 'transparent',
-      current: 'currentColor',
-      black: colors.black,
       neutral: colors.neutral,
       white: colors.white,
       gray: colors.gray,
@@ -22,7 +20,12 @@ module.exports = {
       zinc: colors.zinc
     },
     
-    extend: {},
+    extend: {
+      spacing: {
+        '84': '22.5rem',
+        '98' : '24.5rem'
+      }
+    }
   },
   plugins: [],
 }

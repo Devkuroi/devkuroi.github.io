@@ -11,7 +11,5 @@ function animateBars() {
     line2.classList.toggle("activeLine2")
     line3.classList.toggle("activeLine3")
 
-    //options.classList.toggle("opacity-0")
-    options.classList.toggle("-translate-x-full");
-    //options.classList-toggle("hidden")
+    options.classList.toggle("-translate-x-full")
 }

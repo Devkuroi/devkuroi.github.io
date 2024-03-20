@@ -37,5 +37,3 @@ build/
 /node_modules/
 text.txt
 src/main/resources/static/img/soon.png
-
-email.properties

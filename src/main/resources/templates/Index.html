@@ -9,7 +9,7 @@
     <link th:href="@{/css/hamburger.css}" rel="stylesheet"/>
   </head>
   <body>
-    <nav class="flex items-center justify-center h-16 bg-zinc-950/90 text-white backdrop-blur-md fixed w-full z-50 ">
+    <nav class="flex items-center justify-center h-16 bg-zinc-950/90 text-white backdrop-blur-sm fixed w-full z-50 ">
       <div
         class="flex sm:items-center justify-around text-white w-full max-w-6xl z-50 "
       >
@@ -91,7 +91,7 @@
           </div>
         </div>
       </div>
-      <div class="bg-zinc-900 p-6 text-left absolute rounded-2xl left-0 top-full mt-8 ml-8 w-1/4 max-w-xs min-w-44 self-start -translate-x-[120%]" id="messageSend">
+      <div class="bg-zinc-900 p-6 text-left absolute rounded-2xl left-0 top-full mt-8 ml-8 w-1/4 max-w-xs min-w-44 self-start -translate-x-[120%] " id="messageSend">
         <p class="inline-flex gap-4">Tu mensaje ha sido enviando correctamente
           <span class="relative flex h-3 w-3">
             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-800 opacity-75"></span>
@@ -188,7 +188,7 @@
           <div class="flex gap-1 items-center">
             <a href="https://github.com/Devkuroi/snake-game" aria-label="github">
               <svg
-                class="fill-white size-8 hover:fill-indigo-600 transition-colors"
+                class="fill-white size-8 hover:scale-110 transition-transform"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
@@ -200,14 +200,14 @@
               </svg>
             </a>
             <a href="https://devkuroi.github.io/snake-game/" aria-label="link">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="fill-white size-8 hover:fill-indigo-600 transition-colors"><path d="M13.723 18.654l-3.61 3.609c-2.316 2.315-6.063 2.315-8.378 0-1.12-1.118-1.735-2.606-1.735-4.188 0-1.582.615-3.07 1.734-4.189l4.866-4.865c2.355-2.355 6.114-2.262 8.377 0 .453.453.81.973 1.089 1.527l-1.593 1.592c-.18-.613-.5-1.189-.964-1.652-1.448-1.448-3.93-1.51-5.439-.001l-.001.002-4.867 4.865c-1.5 1.499-1.5 3.941 0 5.44 1.517 1.517 3.958 1.488 5.442 0l2.425-2.424c.993.284 1.791.335 2.654.284zm.161-16.918l-3.574 3.576c.847-.05 1.655 0 2.653.283l2.393-2.389c1.498-1.502 3.94-1.5 5.44-.001 1.517 1.518 1.486 3.959 0 5.442l-4.831 4.831-.003.002c-1.438 1.437-3.886 1.552-5.439-.002-.473-.474-.785-1.042-.956-1.643l-.084.068-1.517 1.515c.28.556.635 1.075 1.088 1.528 2.245 2.245 6.004 2.374 8.378 0l4.832-4.831c2.314-2.316 2.316-6.062-.001-8.377-2.317-2.321-6.067-2.313-8.379-.002z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="fill-white size-8 hover:scale-110 transition-transform"><path d="M13.723 18.654l-3.61 3.609c-2.316 2.315-6.063 2.315-8.378 0-1.12-1.118-1.735-2.606-1.735-4.188 0-1.582.615-3.07 1.734-4.189l4.866-4.865c2.355-2.355 6.114-2.262 8.377 0 .453.453.81.973 1.089 1.527l-1.593 1.592c-.18-.613-.5-1.189-.964-1.652-1.448-1.448-3.93-1.51-5.439-.001l-.001.002-4.867 4.865c-1.5 1.499-1.5 3.941 0 5.44 1.517 1.517 3.958 1.488 5.442 0l2.425-2.424c.993.284 1.791.335 2.654.284zm.161-16.918l-3.574 3.576c.847-.05 1.655 0 2.653.283l2.393-2.389c1.498-1.502 3.94-1.5 5.44-.001 1.517 1.518 1.486 3.959 0 5.442l-4.831 4.831-.003.002c-1.438 1.437-3.886 1.552-5.439-.002-.473-.474-.785-1.042-.956-1.643l-.084.068-1.517 1.515c.28.556.635 1.075 1.088 1.528 2.245 2.245 6.004 2.374 8.378 0l4.832-4.831c2.314-2.316 2.316-6.062-.001-8.377-2.317-2.321-6.067-2.313-8.379-.002z"/></svg>
             </a>
           </div>
           
         </div>
 
         <div
-          class="bg-neutral-900 border-solid shadow-lg rounded-xl p-6 w-64 inline-flex flex-col gap-4 transition-transform hover:scale-105"
+          class="bg-neutral-900 border-solid shadow-lg rounded-xl p-6 w-64 inline-flex flex-col gap-4 transition-transform"
         >
           <img th:src="@{/img/encriptador.png}" alt="encryptor" class="rounded-xl size-56" />
           <h1>Text encryptor</h1>
@@ -264,7 +264,7 @@
           <div class="flex gap-1 items-center">
             <a href="https://github.com/Devkuroi/Encriptador-de-texto" aria-label="github">
               <svg
-                class="fill-white size-8 hover:fill-indigo-600 transition-colors"
+                class="fill-white size-8 hover:scale-110 transition-transform"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
@@ -276,13 +276,13 @@
               </svg>
             </a>
             <a href="https://devkuroi.github.io/Encriptador-de-texto/" aria-label="link">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="fill-white size-8 hover:fill-indigo-600 transition-colors"><path d="M13.723 18.654l-3.61 3.609c-2.316 2.315-6.063 2.315-8.378 0-1.12-1.118-1.735-2.606-1.735-4.188 0-1.582.615-3.07 1.734-4.189l4.866-4.865c2.355-2.355 6.114-2.262 8.377 0 .453.453.81.973 1.089 1.527l-1.593 1.592c-.18-.613-.5-1.189-.964-1.652-1.448-1.448-3.93-1.51-5.439-.001l-.001.002-4.867 4.865c-1.5 1.499-1.5 3.941 0 5.44 1.517 1.517 3.958 1.488 5.442 0l2.425-2.424c.993.284 1.791.335 2.654.284zm.161-16.918l-3.574 3.576c.847-.05 1.655 0 2.653.283l2.393-2.389c1.498-1.502 3.94-1.5 5.44-.001 1.517 1.518 1.486 3.959 0 5.442l-4.831 4.831-.003.002c-1.438 1.437-3.886 1.552-5.439-.002-.473-.474-.785-1.042-.956-1.643l-.084.068-1.517 1.515c.28.556.635 1.075 1.088 1.528 2.245 2.245 6.004 2.374 8.378 0l4.832-4.831c2.314-2.316 2.316-6.062-.001-8.377-2.317-2.321-6.067-2.313-8.379-.002z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="fill-white size-8 hover:scale-110 transition-transform"><path d="M13.723 18.654l-3.61 3.609c-2.316 2.315-6.063 2.315-8.378 0-1.12-1.118-1.735-2.606-1.735-4.188 0-1.582.615-3.07 1.734-4.189l4.866-4.865c2.355-2.355 6.114-2.262 8.377 0 .453.453.81.973 1.089 1.527l-1.593 1.592c-.18-.613-.5-1.189-.964-1.652-1.448-1.448-3.93-1.51-5.439-.001l-.001.002-4.867 4.865c-1.5 1.499-1.5 3.941 0 5.44 1.517 1.517 3.958 1.488 5.442 0l2.425-2.424c.993.284 1.791.335 2.654.284zm.161-16.918l-3.574 3.576c.847-.05 1.655 0 2.653.283l2.393-2.389c1.498-1.502 3.94-1.5 5.44-.001 1.517 1.518 1.486 3.959 0 5.442l-4.831 4.831-.003.002c-1.438 1.437-3.886 1.552-5.439-.002-.473-.474-.785-1.042-.956-1.643l-.084.068-1.517 1.515c.28.556.635 1.075 1.088 1.528 2.245 2.245 6.004 2.374 8.378 0l4.832-4.831c2.314-2.316 2.316-6.062-.001-8.377-2.317-2.321-6.067-2.313-8.379-.002z"/></svg>
             </a>
           </div>
         </div>
 
         <div
-          class="bg-neutral-900 border-solid shadow-lg rounded-xl w-64 h-98 p-6 inline-flex flex-col gap-4 transition-transform hover:scale-105 v1"
+          class="bg-neutral-900 border-solid shadow-lg rounded-xl w-64 h-98 p-6 inline-flex flex-col gap-4 transition-transform"
         >
           <img th:src="@{/img/conversor.png}" alt="converter" class="rounded-xl w-52 h-44" />
           <h1>Multipurpose converter</h1>
@@ -293,7 +293,7 @@
           <div class="flex gap-1 items-center">
             <a href="https://github.com/Devkuroi/Conversor-app" aria-label="github">
               <svg
-                class="fill-white size-8 hover:fill-indigo-600 transition-colors"
+                class="fill-white size-8 hover:scale-110 transition-transform"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
@@ -308,7 +308,7 @@
         </div>
 
         <div
-          class="bg-neutral-900 border-solid rounded-xl w-64 h-80 p-6 inline-flex flex-col gap-4 transition-transform hover:scale-105 v6"
+          class="bg-neutral-900 border-solid rounded-xl w-64 h-80 p-6 inline-flex flex-col gap-4 transition-transform"
         >
           <img th:src="@{/img/hotelLatam.png}" alt="hotelLatam" class="rounded-xl" />
           <h1>Hotel Latam</h1>
@@ -320,7 +320,7 @@
           <div class="flex gap-1 items-center">
             <a href="https://github.com/Devkuroi/HotelLatam" aria-label="github">
               <svg
-                class="fill-white size-8 hover:fill-indigo-600 transition-colors"
+                class="fill-white size-8 hover:scale-110 transition-transform"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"

@@ -1,6 +1,7 @@
 package com.portfolio.devkuroi.services.impl;
 
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Service;
@@ -14,13 +15,11 @@ import jakarta.mail.internet.MimeMessage;
 @Service
 public class EmailServiceImpl implements IEmailService{
     
-    final JavaMailSender javaMailSender;    
-    final TemplateEngine templateEngine;
-
-    EmailServiceImpl(TemplateEngine templateEngine, JavaMailSender javaMailSender) {
-        this.templateEngine = templateEngine;
-        this.javaMailSender = javaMailSender;
-    }
+    @Autowired
+    JavaMailSender javaMailSender;
+    
+    @Autowired
+    TemplateEngine templateEngine;
 
     @Override
     public void sendEmail(EmailDTO email) {

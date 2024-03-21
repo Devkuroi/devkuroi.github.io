@@ -33,7 +33,7 @@ public class EmailConfig {
 
     @SuppressWarnings("null")
     @Bean
-    public JavaMailSender javaMailSender() {
+    JavaMailSender javaMailSender() {
         JavaMailSenderImpl mailSender = new JavaMailSenderImpl();
         mailSender.setJavaMailProperties(getMailProperties());
         mailSender.setUsername(email);
@@ -43,7 +43,7 @@ public class EmailConfig {
     }
 
     @Bean
-    public ResourceLoader resourceLoader() {
+    ResourceLoader resourceLoader() {
         return new DefaultResourceLoader();
     }
 }

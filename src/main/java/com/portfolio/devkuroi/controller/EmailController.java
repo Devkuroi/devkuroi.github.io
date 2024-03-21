@@ -1,6 +1,5 @@
 package com.portfolio.devkuroi.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -18,8 +17,11 @@ import jakarta.mail.MessagingException;
 @RequestMapping
 public class EmailController {
     
-    @Autowired
-    IEmailService emailService;
+    final IEmailService emailService;
+
+    EmailController(IEmailService emailService) {
+        this.emailService = emailService;
+    }
 
     @PostMapping("/send-email")
     public ResponseEntity<String> sendMail(@RequestParam("name") String nombre, @RequestParam("email") String mail, @RequestParam("message") String message) throws MessagingException {
